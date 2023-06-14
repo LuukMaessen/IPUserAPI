@@ -13,6 +13,6 @@ namespace userAPI.Models
         public string? email { get; set; }
 
         [BsonElement("employees")]
-        public List<int> employeeIds { get; set; } = null!;
+        public List<int> Employees { get; set; } = null!;
     }
 }

@@ -27,6 +27,17 @@ namespace userAPI.Services
             return await _userCollection.Find(new BsonDocument()).ToListAsync();
         }
 
+        public async Task<List<int>> GetEmployeeListByUserIdAsync(string userId)
+        {
+            var filter = Builders<User>.Filter.Eq("_id", new ObjectId(userId));
+
+            var result = await _userCollection.Find(filter).FirstOrDefaultAsync();
+            if (result == null)
+                return null;
+
+            return result.Employees;
+        }
+
         public async Task AddToEmployeesAsync(string id, string employees)
         {
             FilterDefinition<User> filter = Builders<User>.Filter.Eq("id", id);

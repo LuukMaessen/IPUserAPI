@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using userAPI.Models;
 using userAPI.Services;
 
@@ -20,6 +22,17 @@ namespace userAPI.Controllers
         public async Task<List<User>> Get()
         {
             return await _mongoDBService.GetAsync();
+        }
+
+
+        [HttpGet("{id}/employees")]
+        public async Task<ActionResult<List<int>>> GetUserEmployees(string id)
+        {
+            var employees = await _mongoDBService.GetEmployeeListByUserIdAsync(id);
+            if (employees == null)
+                return NotFound();
+
+            return Ok(employees);
         }
 
         [HttpPost]

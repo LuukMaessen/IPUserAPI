@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iyTP4Ja4LJgO8UgAkHvEG1gfHfnVy/oQFl8qQQYW4U6FshMSj4A+fP02i54qQArNtId9DAtTGtlPTc4WtFGrOQ==",
+  "dgSpecHash": "EjEhwZpjzu5E9nhMKz4V28zzz5RIYb2/8U+RFlsFv5AUV13zYrF0D6V/cuaT4n9e9Ul6Vb5AG2EHrA4SJR+Q5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\userAPI\\userAPI\\userAPI.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\GitHub\\IPUserAPI\\userAPI\\userAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
