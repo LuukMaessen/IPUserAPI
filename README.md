@@ -1,2 +1,2 @@
 # IPUserAPI
-User api for ip
+This repository is implementing an API to fetch, add, update and delete User data.
